@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/calculator.png">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        <button class="span-two" onclick="clearAll()">AC</button>
+        <button onclick="deleteNumber()">DEL</button>
+        <button onclick="appendOperator('÷')" class="operator">÷</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendOperator('×')" class="operator">×</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendOperator('+')" class="operator">+</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendOperator('-')" class="operator">-</button>
+        <button onclick="appendNumber('.')" class="decimal">.</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="calculate()" class="span-two equals">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
